@@ -1,0 +1,49 @@
+header .list-content{
+    width: 100%;
+    background-color: yellow;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s ease;
+}
+
+header .list-content .li-burger {
+    color: red;
+    transition: all 0.1s ease;
+    align-items: center;
+    width: 20%;
+    justify-content: space-between;
+    font-size: 2rem;
+    height: 100%;
+}
+
+.list-open{
+    height: 80vh;
+    margin-top: 10vh;   
+}
+
+.list-close{
+    height: 0px;
+    margin-top: 0vh;
+}
+
+.li-close{
+    height: 0px;
+}
+
+.content-picture-menu{
+    width: 100px;
+}
+
+
+.li-burger:nth-child(2n){
+    flex-direction: row-reverse;
+}
+
+
+
+
+
+
+
+

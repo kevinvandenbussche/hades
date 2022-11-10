@@ -1,0 +1,49 @@
+.menu-burger li{
+    border-top: 2px solid red;
+    width: 100%;
+    margin-top: 10px;
+    transition: all 0.2s ease;
+}
+
+.menu-burger {
+    width: 30px;
+    list-style: none;
+    margin-left: auto;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.rotate1{
+    transform: translateY(10px) rotateZ(45deg);
+    
+}
+
+.none{
+    display: none;
+}
+
+.rotate2{
+    transform: rotateZ(-45deg);
+}
+
+header{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: 120vh;
+}
+
+header .container-logo{
+    width: 20%;
+    margin-top: 50px;
+} 
+
+header .container-top{
+    background-color: black;
+    height: 10vh;
+    position: fixed;
+    align-items: center;
+}

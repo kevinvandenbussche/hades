@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.img-fluid{
+    width: 100%;
+    height: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+@font-face {
+    font-family: hades;
+    src: url('../font/HADES.otf');
+}
+
+.font-hades{
+    font-family: hades;
+}
+
+.align-items{
+    align-items: center;
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+

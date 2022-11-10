@@ -1,0 +1,24 @@
+.img-section-principal{
+    width: 30%;
+}
+
+.img-section-principal + div{
+    width: 50%;
+}
+
+.article-principal{
+    padding: 0px 50px 0px 50px;
+    align-items: center;
+}
+
+.article-principal:nth-child(2n){
+    flex-direction: row-reverse;
+}
+
+.article-principal h3{
+    font-family: hades;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
