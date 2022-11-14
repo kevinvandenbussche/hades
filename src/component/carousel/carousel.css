@@ -1,0 +1,83 @@
+.carousel-item{
+   justify-content: space-around;
+   align-items: center;
+}
+
+.container{
+    position: relative;    
+    overflow: hidden;
+    width: 22vw;
+    height: 75vh;
+}
+
+.items{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent-carousel{
+    overflow: hidden;
+    position: relative;
+    margin-left: 15px;
+    margin-top: 50px;
+}
+
+.parent-carousel .div-image{
+    width: 300px;
+    height: 50vh;
+    
+}
+
+.parent-carousel .div-image .img-fluid{
+    height: 100%;
+    object-fit: cover;
+}
+
+.parent-carousel p{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    transform: translateY(100%);
+    transition: all 0.5s ease;
+    padding: 10px;
+    border-radius: 6px;
+    z-index: 2;
+}
+
+.parent-carousel h3{
+    background-color: red;
+    font-family: hades;
+    text-align: center;
+    border-radius: 6px;
+    z-index: 3;
+    position: relative;
+    font-size: 2rem;
+}
+
+.parent-carousel:hover p{
+    transform: translateY(0%);
+}
+
+.chevron{
+    width: 50px;
+    cursor: pointer;
+}
+
+.chevron-right{
+    transform: rotateZ(180deg);
+}
+
+.none{
+    display: none;
+}
+
+.block{
+    display: block;
+}
+

@@ -2,7 +2,6 @@ import './liste.css'
 import '../../asset/css/generic.css';
 
 export function Liste(props){
-    console.log(props.sectionPrincipal)
     let classNameUl = 'list-content flex';
     let statusList = ' list-close';
     let liBurger = 'li-burger font-hades flex';

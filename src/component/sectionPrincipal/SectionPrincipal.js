@@ -7,7 +7,7 @@ export function SectionPrincipal(props){
         <section>
             {props.sectionPrincipal.map((item)=>{
                 let textColor = ' ';
-                //changer la couleur du texte selon le personnage de la map
+                //changer la couleur du texte selon le personnage de la .map
                 switch(item.name){
                     case 'Zagreus':
                         textColor = 'yellow';
