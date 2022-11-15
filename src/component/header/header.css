@@ -34,6 +34,7 @@ header{
     justify-content: space-around;
     background-color: black;
     height: 120vh;
+    z-index: 0;
 }
 
 header .container-logo{
@@ -46,4 +47,5 @@ header .container-top{
     height: 10vh;
     position: fixed;
     align-items: center;
+    z-index: 1;
 }

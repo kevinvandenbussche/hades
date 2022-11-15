@@ -11,17 +11,18 @@ export function Carousel(props){
     let classChevronLeft = 'chevron-left chevron';
     let classChevronRight = 'chevron-right chevron';
 
-    const chevronLeft = ()=>{
+    const chevronLeft = (e)=>{
         setPositionItem(positionItem - 1);
     }
 
-    const chevronRight = ()=>{
+    const chevronRight = (e)=>{
         setPositionItem(positionItem + 1);
+        console.log(e)
     }
 
     return(
         <section className="carousel-item flex" style={{ backgroundImage:`url(${fondImage})`,backgroundRepeat:"no-repeat", backgroundSize:"cover"}}>
-            <div className={classChevronLeft} onClick={chevronLeft}><img className='img-fluid' src={chevron} alt='chevron'/></div>
+            <button className={classChevronLeft} onClick={chevronLeft}><img className='img-fluid' src={chevron} alt='chevron'/></button>
                 <div className='flex container'>
                     <div className='items flex'>
                         <div key={itemCarousel[positionItem].id} className='parent-carousel'>
@@ -33,7 +34,7 @@ export function Carousel(props){
                         </div>
                     </div>
                 </div>
-            <div className={classChevronRight} onClick={chevronRight}><img className='img-fluid' src={chevron} alt='chevron'/></div>
+            <button className={classChevronRight} onClick={chevronRight}><img className='img-fluid' src={chevron} alt='chevron'/></button>
         </section>
     );
 }
