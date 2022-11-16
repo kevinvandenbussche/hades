@@ -6,10 +6,8 @@ header .list-content{
     align-items: center;
     transition: all 0.8s ease;
     overflow: hidden;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 3;
+    position: fixed;
+    z-index: 1;
 }
 
 header .list-content .li-burger {

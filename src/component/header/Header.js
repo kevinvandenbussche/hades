@@ -19,7 +19,7 @@ export function Header(props){
         croix2 += ' rotate2'
     }
     return(
-        <header style={{backgroundImage:"url(/img/wall.jpg", backgroundSize:"cover"}}>
+        <header style={{backgroundImage:"url(/img/wall.jpg", backgroundSize:"cover", backgroundPositionX:"-150px", backgroundPositionY:"50px"}}>
             <div className='container-top flex'>
                 <div className='container-logo'>
                     <img className='img-fluid' src={logo} alt='logo hades'/>
