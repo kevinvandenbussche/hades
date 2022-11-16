@@ -22,7 +22,7 @@ export function SectionPrincipal(props){
                         textColor = 'white'
                 }
               return(
-                <article key={item.id} className="flex space-between article-principal" style={{backgroundColor: item.color}}>
+                <article id={item.name} key={item.id} className="flex space-between article-principal" style={{backgroundColor: item.color}}>
                     <div className="img-section-principal">
                         <img className='img-fluid' src={item.image} alt={item.name}/>
                     </div>

@@ -7,7 +7,7 @@ header .list-content{
     transition: all 0.8s ease;
     overflow: hidden;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
 }
 
 header .list-content .li-burger {
@@ -15,13 +15,16 @@ header .list-content .li-burger {
     transition: all 0.1s ease;
     align-items: center;
     width: 20%;
-    justify-content: space-between;
-    font-size: 2rem;
-    
+    justify-content: space-around;
+    font-size: 2rem; 
+}
+
+header .list-content .li-burger div{
+    margin-right: auto;
 }
 
 .list-open{
-    height: 80vh;
+    height: 70vh;
     margin-top: 10vh;   
 }
 
@@ -34,9 +37,7 @@ header .list-content .li-burger {
     width: 100px;
 }
 
-.li-burger:nth-child(2n){
-    flex-direction: row-reverse;
-}
+
 
 
 

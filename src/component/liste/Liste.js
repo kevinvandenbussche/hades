@@ -12,17 +12,22 @@ export function Liste(props){
     }else{
         classNameUl += statusList
     }
+
+    const contenuLi = [];
+    props.sectionPrincipal.forEach(item => {
+        contenuLi.push(
+            <li className="li-burger font-hades flex" key={item.id}>
+                <div className='content-picture-menu' >
+                    <img className='img-fluid' src={item.image} alt={item.name}/>
+                </div>
+                <a href={'#'+item.name}>{item.name}</a>
+            </li>
+            )
+    });
     
     return(
         <ul className={classNameUl}>
-            {props.sectionPrincipal.map((item)=>{
-                return<li className="li-burger font-hades flex" key={item.id}>
-                    {item.name}
-                    <div className='content-picture-menu' >
-                        <img className='img-fluid' src={item.image} alt={item.name}/>
-                    </div>
-                </li>
-            })}
+            {contenuLi}
         </ul>
     )
 }
