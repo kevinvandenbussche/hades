@@ -8,21 +8,28 @@ export function Carousel(props){
     const itemsCarouselLength = props.itemsCarousel.length;
     const [positionItem, setPositionItem] = useState(0);
     const itemCarousel = props.itemsCarousel;
-    let classChevronLeft = 'chevron-left chevron';
-    let classChevronRight = 'chevron-right chevron';
+    const classChevronLeft = 'chevron-left chevron';
+    const classChevronRight = 'chevron-right chevron';
 
     const chevronLeft = (e)=>{
-        setPositionItem(positionItem - 1);
+        if(positionItem === 0){
+            e.preventDefault();
+        }else{
+            setPositionItem(positionItem - 1);
+        }
     }
 
     const chevronRight = (e)=>{
-        setPositionItem(positionItem + 1);
-        console.log(e)
+        if(positionItem === itemsCarouselLength -1){
+            e.preventDefault();
+        }else{
+            setPositionItem(positionItem + 1);
+        }
     }
 
     return(
         <section className="carousel-item flex" style={{ backgroundImage:`url(${fondImage})`,backgroundRepeat:"no-repeat", backgroundSize:"cover"}}>
-            <button className={classChevronLeft} onClick={chevronLeft}><img className='img-fluid' src={chevron} alt='chevron'/></button>
+            <button className={classChevronLeft} onClick={(e)=>chevronLeft(e)}><img className='img-fluid' src={chevron} alt='chevron'/></button>
                 <div className='flex container'>
                     <div className='items flex'>
                         <div key={itemCarousel[positionItem].id} className='parent-carousel'>
@@ -34,7 +41,7 @@ export function Carousel(props){
                         </div>
                     </div>
                 </div>
-            <button className={classChevronRight} onClick={chevronRight}><img className='img-fluid' src={chevron} alt='chevron'/></button>
+            <button className={classChevronRight} onClick={(e)=>chevronRight(e)}><img className='img-fluid' src={chevron} alt='chevron'/></button>
         </section>
     );
 }

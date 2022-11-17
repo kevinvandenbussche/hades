@@ -16,6 +16,7 @@
     left: 0px;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .parent-carousel{
